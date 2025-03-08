@@ -12,10 +12,19 @@ contract QuizRewards {
     }
 
     // Function to issue rewards based on quiz marks
-    function issueReward(address _user, uint256 _amount) public {
+      function calculateReward(uint256 score) internal pure returns (uint256) {
+        if (score > 2) {
+            // For example, every point above 2 gives 100 units reward.
+            return (score - 2) * 100;
+        }
+        return 0;
+    }
+    function issueReward(address _user, uint256 _score) public {
         require(msg.sender == owner, "Only owner can issue rewards");
-        rewards[_user] += _amount;
-        emit RewardIssued(_user, _amount);
+         uint256 rewardAmount = calculateReward(score);
+        require(rewardAmount > 0, "Score too low for reward");
+        rewards[_user] += rewardAmount;
+        emit RewardIssued(_user, rewardAmount);
     }
 
     // Optionally, add functions for users to claim or check rewards
