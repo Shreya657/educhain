@@ -11,14 +11,14 @@ import { CONTRACT_ADDRESS } from "../config";
 const Result = () => {
     const location=useLocation();
     const navigate=useNavigate();
-    const{score,total,questions=[]}=location.state||{score:0,total:0,questions:[]};
+    const{score,total,questions=[]}=location.state||{score:4,total:5,questions:[]};
     const [showAnswers, setShowAnswers] = useState(false);
     const [quizContract, setQuizContract] = useState(null);
     const [isClaiming, setIsClaiming] = useState(false);
     const [claimSuccess, setClaimSuccess] = useState(false);
     const [message, setMessage] = useState("");
 
-    const rewardAmount = score > 1 ? (score - 2) * 100 : 0;
+    const rewardAmount = score > 1 ? (score - 1) * 100 : 0;
     useEffect(() => {
       const initBlockchain = async () => {
           if (!window.ethereum) {
