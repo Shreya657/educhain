@@ -1,0 +1,107 @@
+.result-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-heading {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .score-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2ecc71;
+  }
+  
+  .success-msg, .encourage-msg {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #2c3e50;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .try-again-btn, .claim-reward-btn,.toggle-answers-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .try-again-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .try-again-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .claim-reward-btn {
+    background-color: #f1c40f;
+    color: black;
+  }
+  
+  .claim-reward-btn:hover {
+    background-color: #f39c12;
+  }
+  .toggle-answers-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .toggle-answers-btn:hover {
+    background-color: #2980b9;
+  }
+  .answer-review {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .question-box {
+    margin-bottom: 15px;
+  }
+  
+  .question-text {
+    font-weight: bold;
+  }
+  .option{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.correct {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.wrong {
+  background-color: #e74c3c;
+  color: white;
+}
+  
