@@ -72,7 +72,6 @@ const Result = () => {
     } finally {
         setIsClaiming(false);
     }
-    // navigate('/result', { state: { score, total, questions, message } });
       // Future blockchain reward logic will go here
     };
   return (
